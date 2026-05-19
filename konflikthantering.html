@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konflikthantering – SEJM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html"><img src="images/SEJMlogga-genomskinlig-LITEN.png" alt="SEJM" /></a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Öppna meny">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="ledare.html">Ledare</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="konflikthantering.html" class="active">Konflikthantering</a></li>
+      <li><a href="boken.html">Boken</a></li>
+      <li><a href="mailto:kontakt@sejm.se">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero" style="background-image: url('images/Konflikthantering.jpg');">
+    <div class="page-hero-content">
+      <h1>Konflikthantering</h1>
+      <p>Kartläggning, analys och handfasta åtgärder</p>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <section class="section section-light">
+    <div class="container">
+      <h2>En vardag utan energikrävande konflikter</h2>
+      <p>
+        En stor del av välmåendet – för individen såväl som för organisationen –
+        kommer ur en vardag utan energikrävande konflikter. När vi kan fokusera
+        på uppdraget i stället för på interna spänningar frigörs kraft, kreativitet
+        och resultat.
+      </p>
+      <p>
+        Konflikter uppstår i alla organisationer. Det är inte konflikten i sig
+        som är problemet – det är hur den hanteras. En olöst konflikt kostar
+        tid, energi och i förlängningen både hälsa och affärer. En välhanterad
+        konflikt kan tvärtom stärka relationer och skapa klarhet.
+      </p>
+
+      <div class="quote-block">
+        Framför allt är målet att ge individen verktyg för att klara av den
+        svåra balansgången med att klara av sitt chefsuppdrag och ändå
+        långsiktigt må bra.
+        <cite>SEJM</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- Processen -->
+  <section class="section section-tinted">
+    <div class="container">
+      <h2>Så arbetar vi</h2>
+
+      <h3>1. Kartläggning</h3>
+      <p>
+        Arbetet börjar alltid med en grundlig kartläggning av situationen.
+        Vilka parter är inblandade? Vad är bakgrunden? Hur länge har konflikten
+        pågått och vad har redan prövats? Utan en ärlig bild av utgångsläget
+        är alla åtgärder skjutna i blindo.
+      </p>
+
+      <h3>2. Analys</h3>
+      <p>
+        Utifrån kartläggningen görs en analys av konfliktens kärna. Ofta
+        handlar det om mer än det synliga – underliggande behov, missförstånd
+        i kommunikationen eller strukturella faktorer i organisationen spelar
+        regelmässigt in. DISC-beteendeprofil kan användas för att öka
+        förståelsen för hur olika personlighetstyper bidrar till dynamiken.
+      </p>
+
+      <h3>3. Handfast bearbetning</h3>
+      <p>
+        Med analysen som grund genomförs ett strukturerat arbete med de
+        inblandade parterna. Det kan ske individuellt, i par eller i grupp
+        beroende på situationen. Målet är alltid konkreta, överenskomna
+        förändringar – inte bara ett tillfälligt lugn.
+      </p>
+
+      <h3>4. Dokumenterade åtgärdsförslag</h3>
+      <p>
+        Arbetet avslutas med tydliga, dokumenterade åtgärdsförslag som ger
+        organisationen ett verktyg att följa upp och säkerställa att
+        förändringen håller över tid.
+      </p>
+    </div>
+  </section>
+
+  <!-- Empatisk kommunikation -->
+  <section class="section section-light">
+    <div class="container">
+      <h2>Kommunikation som verktyg</h2>
+      <div class="two-col">
+        <div>
+          <p>
+            Många konflikter har sin rot i bristande kommunikation – inte i
+            faktiska intressemotsättningar. Genom empatisk kommunikation
+            (NVC) skapas ett språk som gör det möjligt att uttrycka behov
+            och känslor utan att eskalera spänningar.
+          </p>
+          <p>
+            Aktivt lyssnande är en central del av metoden. Den som verkligen
+            lyssnar förstår mer, skapar tillit och har bättre förutsättningar
+            att hitta lösningar som håller.
+          </p>
+          <ul class="styled">
+            <li>Samtal utan fruktan – strukturerade dialoger</li>
+            <li>NVC – empatisk kommunikation</li>
+            <li>Medling och facilitation</li>
+            <li>DISC för ökad förståelse av beteenden</li>
+            <li>Uppföljning och långsiktig förankring</li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/Konflikthantering.jpg" alt="Konflikthantering" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <div class="contact-strip">
+    <h2>Behöver ni hjälp med en konflikt?</h2>
+    <p>Ju tidigare man agerar, desto enklare är det att lösa. Hör av dig så tittar vi på situationen tillsammans.</p>
+    <a href="mailto:kontakt@sejm.se" class="btn">kontakt@sejm.se</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SEJM &nbsp;|&nbsp; <a href="mailto:kontakt@sejm.se">kontakt@sejm.se</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

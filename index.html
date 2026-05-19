@@ -1,130 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Claude Code – How It Works</title>
+  <title>SEJM – Ledarutveckling &amp; Coaching</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <div class="header-inner">
-      <span class="logo">⚡ Claude Code</span>
-      <nav>
-        <a href="#what">What is it</a>
-        <a href="#how">How it works</a>
-        <a href="#features">Features</a>
-        <a href="#start">Get started</a>
-      </nav>
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html"><img src="images/SEJMlogga-genomskinlig-LITEN.png" alt="SEJM" /></a>
     </div>
-  </header>
+    <button class="nav-toggle" id="navToggle" aria-label="Öppna meny">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="ledare.html">Ledare</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="konflikthantering.html">Konflikthantering</a></li>
+      <li><a href="boken.html">Boken</a></li>
+      <li><a href="mailto:kontakt@sejm.se">Kontakt</a></li>
+    </ul>
+  </nav>
 
+  <!-- Hero -->
   <section class="hero">
-    <h1>Claude Code</h1>
-    <p class="subtitle">Anthropic's AI-powered CLI that works directly in your terminal — reads your codebase, writes code, runs tests, and ships features.</p>
-    <a href="https://claude.ai/code" class="btn" target="_blank">Try Claude Code →</a>
+    <div class="hero-content">
+      <h1>SEJM</h1>
+      <p class="hero-tagline">Alla chefer &nbsp;·&nbsp; Alla ledare &nbsp;·&nbsp; Alla branscher &nbsp;·&nbsp; Alla nivåer</p>
+
+      <blockquote class="hero-quote">
+        Om du känner dig själv och din motpart, är utgången av hundratals
+        utmaningar given. Om du känner dig själv men inte din motpart, får du
+        ett nederlag för varje seger. Känner du varken dig själv eller din
+        motpart, är du förlorad.
+        <cite>Sun Tzu – Krigskonsten</cite>
+      </blockquote>
+
+      <a href="#erbjudande" class="hero-cta">Utforska SEJM</a>
+    </div>
   </section>
 
-  <section id="what" class="section alt">
+  <!-- Om SEJM -->
+  <section id="erbjudande" class="section section-tinted">
     <div class="container">
-      <h2>What is Claude Code?</h2>
-      <p>Claude Code is an agentic coding tool built by <strong>Anthropic</strong>. Unlike a chat interface, it runs as a CLI inside your terminal and has direct access to your file system, your git history, and your shell — so it can actually <em>do</em> things, not just suggest them.</p>
+      <h2>Vad är SEJM?</h2>
+      <p>
+        SEJM vägleder chefer och ledare till att bli den bästa versionen av sig
+        själva – utan att tappa sig själva på vägen. Utgångspunkten är alltid
+        individen: din självinsikt, dina styrkor och din förmåga att skapa
+        resultat i balans med välmående.
+      </p>
+      <p>
+        Med mer än 20 års erfarenhet som chef och ledare, kombinerat med
+        diplomerad coaching och licens för Extended DISC, skapar SEJM skräddarsydda
+        lösningar för individer, grupper och organisationer i alla branscher.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tjänstekort -->
+  <section class="section section-light">
+    <div class="container-wide">
+      <div class="container" style="margin-bottom:0;">
+        <h2>Vad vi erbjuder</h2>
+      </div>
       <div class="cards">
-        <div class="card">
-          <div class="card-icon">🗂️</div>
-          <h3>Reads your codebase</h3>
-          <p>Claude Code explores your project files, understands structure, and uses that context when writing or editing code.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">✏️</div>
-          <h3>Writes & edits code</h3>
-          <p>It creates new files, edits existing ones, and refactors code — all without you leaving the terminal.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔧</div>
-          <h3>Runs commands</h3>
-          <p>Runs tests, installs packages, starts servers, and executes git commands on your behalf.</p>
-        </div>
+        <a href="ledare.html" class="card">
+          <span class="card-icon">🧭</span>
+          <h3>Ledare</h3>
+          <p>Bli den bästa chefen du kan vara – med självinsikt, integritet och rätt verktyg.</p>
+        </a>
+        <a href="team.html" class="card">
+          <span class="card-icon">🤝</span>
+          <h3>Team</h3>
+          <p>Forma ett högpresterande team som levererar resultat och ändå mår bra.</p>
+        </a>
+        <a href="konflikthantering.html" class="card">
+          <span class="card-icon">⚖️</span>
+          <h3>Konflikthantering</h3>
+          <p>Kartläggning, analys och handfasta åtgärder för en vardag utan energikrävande konflikter.</p>
+        </a>
+        <a href="boken.html" class="card">
+          <span class="card-icon">📖</span>
+          <h3>Boken</h3>
+          <p><em>En hel människa – och ändå chef.</em> Om integritet, självinsikt och att överleva som ledare.</p>
+        </a>
       </div>
     </div>
   </section>
 
-  <section id="how" class="section">
+  <!-- Fem skäl -->
+  <section class="section section-tinted">
     <div class="container">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li>
-          <span class="step-num">1</span>
-          <div>
-            <h3>You describe what you want</h3>
-            <p>Type a plain-English task in the terminal — "add a login page", "fix the failing test", "refactor this module".</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-num">2</span>
-          <div>
-            <h3>Claude explores the context</h3>
-            <p>It reads relevant files, checks git history, and builds a full picture of your project before doing anything.</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-num">3</span>
-          <div>
-            <h3>It acts — and shows you what it did</h3>
-            <p>Claude makes the changes, runs commands, and displays a diff so you stay in full control of every edit.</p>
-          </div>
-        </li>
-      </ol>
+      <h2>Fem skäl att välja SEJM</h2>
+      <ul class="styled">
+        <li>Du vågar utmana dig själv att bli den bästa chef just du kan vara</li>
+        <li>Du vill att din grupp ska bli det bästa team det kan vara</li>
+        <li>Du vill öka både produktiviteten och välbefinnandet</li>
+        <li>Du vill jobba med en kompetent coach, mentor och utvecklare</li>
+        <li>Du vill ha resultat av de resurser du investerar i utveckling</li>
+      </ul>
     </div>
   </section>
 
-  <section id="features" class="section alt">
-    <div class="container">
-      <h2>Key features</h2>
-      <div class="features-grid">
-        <div class="feature">
-          <h3>Slash commands</h3>
-          <p>Built-in shortcuts like <code>/clear</code>, <code>/review</code>, and <code>/init</code> for common workflows.</p>
-        </div>
-        <div class="feature">
-          <h3>MCP servers</h3>
-          <p>Connect external tools — databases, APIs, browsers — so Claude can interact with your whole stack.</p>
-        </div>
-        <div class="feature">
-          <h3>CLAUDE.md</h3>
-          <p>A project memory file. Write down conventions and Claude will follow them in every session.</p>
-        </div>
-        <div class="feature">
-          <h3>Git-aware</h3>
-          <p>Reads your git log and diffs to understand what changed and why — useful for reviews and debugging.</p>
-        </div>
-        <div class="feature">
-          <h3>IDE integration</h3>
-          <p>Available as a VS Code and JetBrains extension so you can run it without leaving your editor.</p>
-        </div>
-        <div class="feature">
-          <h3>Permission model</h3>
-          <p>You control what Claude is allowed to run. Sensitive commands require your explicit approval.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="start" class="section">
-    <div class="container center">
-      <h2>Get started</h2>
-      <p>Claude Code requires an Anthropic account. Install it with one command:</p>
-      <div class="code-block">npm install -g @anthropic-ai/claude-code</div>
-      <p>Then open a terminal in any project folder and run:</p>
-      <div class="code-block">claude</div>
-      <a href="https://docs.anthropic.com/en/docs/claude-code" class="btn" target="_blank">Read the docs →</a>
-    </div>
-  </section>
+  <!-- Kontakt -->
+  <div class="contact-strip">
+    <h2>Hör av dig</h2>
+    <p>Tveka inte att ta kontakt – oavsett om du har en konkret fråga eller bara vill veta mer om hur SEJM kan hjälpa just dig.</p>
+    <a href="mailto:kontakt@sejm.se" class="btn">kontakt@sejm.se</a>
+  </div>
 
   <footer>
-    <p>Made by <a href="https://github.com/stefanwittrin" target="_blank">Stefan Wittrin</a> · Information sourced from <a href="https://anthropic.com" target="_blank">Anthropic</a></p>
+    <p>&copy; 2025 SEJM &nbsp;|&nbsp; <a href="mailto:kontakt@sejm.se">kontakt@sejm.se</a></p>
   </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
